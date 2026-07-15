@@ -1,0 +1,96 @@
+[
+    {
+        "Command": [],
+        "Constant": [],
+        "Constructor": [],
+        "Deprecated": [],
+        "Field": [],
+        "Function": [],
+        "Method": [
+            {
+                "def": "SFSymbols:image(name[, opts]) -> hs.image | nil",
+                "signature": "SFSymbols:image(name[, opts]) -> hs.image | nil",
+                "name": "image",
+                "type": "Method",
+                "desc": "Returns a template hs.image for the named SF Symbol, or nil if it can't be rendered (for example, the symbol doesn't exist on this OS).",
+                "doc": "Returns a template `hs.image` for the named SF Symbol, or `nil` if it can't be rendered (for example, the symbol doesn't exist on this OS). Results are memoised per unique render spec.\n\nParameters:\n * name - the SF Symbol name, e.g. \"cup.and.saucer.fill\"\n * opts - an optional table of rendering options:\n   * height    - scale the image to this point height, preserving aspect ratio\n   * pointSize - SF Symbol point size to render at (default 18)\n   * scale     - pixel scale factor for retina crispness (default 3)\n   * weight    - ultralight|thin|light|regular|medium|semibold|bold|heavy|black\n   * template  - mark as a template image for menubar tinting (default true)\n\nReturns:\n * an `hs.image` object, or `nil` on failure",
+                "stripped_doc": "",
+                "parameters": [
+                    " * name - the SF Symbol name, e.g. \"cup.and.saucer.fill\"",
+                    " * opts - an optional table of rendering options:",
+                    "   * height    - scale the image to this point height, preserving aspect ratio",
+                    "   * pointSize - SF Symbol point size to render at (default 18)",
+                    "   * scale     - pixel scale factor for retina crispness (default 3)",
+                    "   * weight    - ultralight|thin|light|regular|medium|semibold|bold|heavy|black",
+                    "   * template  - mark as a template image for menubar tinting (default true)"
+                ],
+                "returns": [
+                    " * an hs.image object, or nil on failure"
+                ],
+                "notes": [],
+                "examples": [],
+                "file": "Spoons/SFSymbols.spoon/init.lua",
+                "lineno": "73"
+            }
+        ],
+        "Variable": [
+            {
+                "def": "SFSymbols.cacheDir",
+                "signature": "SFSymbols.cacheDir",
+                "name": "cacheDir",
+                "type": "Variable",
+                "desc": "Directory where rendered template PNGs are cached.",
+                "doc": "Directory where rendered template PNGs are cached. Defaults to `<hs.configdir>/.cache/SFSymbols`. Set this before the first `:image()` call to override.",
+                "stripped_doc": "",
+                "notes": [],
+                "file": "Spoons/SFSymbols.spoon/init.lua",
+                "lineno": "34"
+            }
+        ],
+        "name": "SFSymbols",
+        "desc": "Render SF Symbols as template hs.image icons.",
+        "doc": "Render SF Symbols as template `hs.image` icons.\n\nHammerspoon has no native SF Symbol support, so this Spoon renders a symbol to a cached template PNG (via a bundled Swift helper) and returns it as an `hs.image` suitable for menubars, canvases, toolbars, etc. Because the images are marked as templates, they inherit the menubar's monochrome tint and adapt to light/dark automatically.",
+        "stripped_doc": "",
+        "items": [
+            {
+                "def": "SFSymbols.cacheDir",
+                "signature": "SFSymbols.cacheDir",
+                "name": "cacheDir",
+                "type": "Variable",
+                "desc": "Directory where rendered template PNGs are cached.",
+                "doc": "Directory where rendered template PNGs are cached. Defaults to `<hs.configdir>/.cache/SFSymbols`. Set this before the first `:image()` call to override.",
+                "stripped_doc": "",
+                "notes": [],
+                "file": "Spoons/SFSymbols.spoon/init.lua",
+                "lineno": "34"
+            },
+            {
+                "def": "SFSymbols:image(name[, opts]) -> hs.image | nil",
+                "signature": "SFSymbols:image(name[, opts]) -> hs.image | nil",
+                "name": "image",
+                "type": "Method",
+                "desc": "Returns a template hs.image for the named SF Symbol, or nil if it can't be rendered (for example, the symbol doesn't exist on this OS).",
+                "doc": "Returns a template `hs.image` for the named SF Symbol, or `nil` if it can't be rendered (for example, the symbol doesn't exist on this OS). Results are memoised per unique render spec.\n\nParameters:\n * name - the SF Symbol name, e.g. \"cup.and.saucer.fill\"\n * opts - an optional table of rendering options:\n   * height    - scale the image to this point height, preserving aspect ratio\n   * pointSize - SF Symbol point size to render at (default 18)\n   * scale     - pixel scale factor for retina crispness (default 3)\n   * weight    - ultralight|thin|light|regular|medium|semibold|bold|heavy|black\n   * template  - mark as a template image for menubar tinting (default true)\n\nReturns:\n * an `hs.image` object, or `nil` on failure",
+                "stripped_doc": "",
+                "parameters": [
+                    " * name - the SF Symbol name, e.g. \"cup.and.saucer.fill\"",
+                    " * opts - an optional table of rendering options:",
+                    "   * height    - scale the image to this point height, preserving aspect ratio",
+                    "   * pointSize - SF Symbol point size to render at (default 18)",
+                    "   * scale     - pixel scale factor for retina crispness (default 3)",
+                    "   * weight    - ultralight|thin|light|regular|medium|semibold|bold|heavy|black",
+                    "   * template  - mark as a template image for menubar tinting (default true)"
+                ],
+                "returns": [
+                    " * an hs.image object, or nil on failure"
+                ],
+                "notes": [],
+                "examples": [],
+                "file": "Spoons/SFSymbols.spoon/init.lua",
+                "lineno": "73"
+            }
+        ],
+        "submodules": [],
+        "type": "Module"
+    }
+]
